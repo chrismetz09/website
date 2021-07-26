@@ -145,17 +145,6 @@ The figure above illustrates three control plane nodes and their components in a
 - Add-on manager: each works independently to keep add-ons in sync.
 
 In addition, a load balancer operating in front of the API servers routes external and internal traffic to the control plane nodes.
-Each of the control plane nodes will run the following components in the following mode:
-
-* etcd instance: all instances will be clustered together using consensus;
-
-* API server: each server will talk to local etcd - all API servers in the cluster will be available;
-
-* controllers, scheduler, and cluster auto-scaler: will use lease mechanism - only one instance of each of them will be active in the cluster;
-
-* add-on manager: each manager will work independently trying to keep add-ons in sync.
-
-In addition, there will be a load balancer in front of API servers that will route external and internal traffic to them.
 
 ### Load balancing
 
