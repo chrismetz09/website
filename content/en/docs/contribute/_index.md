@@ -44,17 +44,96 @@ to work effectively in the Kubernetes community.
 To get involved with documentation:
 
 1. Sign the CNCF [Contributor License Agreement](https://github.com/kubernetes/community/blob/master/CLA.md).
-1. Familiarize yourself with the [documentation repository](https://github.com/kubernetes/website)
+2. Familiarize yourself with the [documentation repository](https://github.com/kubernetes/website)
    and the website's [static site generator](https://gohugo.io).
-1. Make sure you understand the basic processes for
+3. Make sure you understand the basic processes for
    [opening a pull request](/docs/contribute/new-content/open-a-pr/) and
    [reviewing changes](/docs/contribute/review/reviewing-prs/).
+
+<!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
+<!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
+
+```mermaid
+flowchart TB
+    subgraph third[Open PR]
+        direction TB
+        U[ ] -.-
+        Q[Improve content] --> N[Create content]
+        N --> O[Translate docs]
+        O --> P[Manage/publish docs parts<br>of K8s release cycle]
+ 
+    end
+
+    subgraph second[Review]
+    direction TB
+       T[ ] -.-
+       D[Look over the<br>K8s/website<br>repository] -->E[Check out the<br>Hugo static site<br>generator]
+       E --> F[Understand basic<br>GitHub commands]
+       F --> G[Review open PR<br>and change review <br>processes]
+    end
+
+    subgraph first[Sign up]
+        direction TB
+        S[ ] -.-
+        B[Sign the CNCF<br>Contributor<br>License Agreement] --> 
+        C[Join sig-docs<br>Slack channel] --> M[Attend weekly<br>sig-docs calls<br>or slack meetings]
+    end
+    
+    A([fa:fa-user New<br>Contributor]) --> first
+    A --> second
+    A --> third
+    A --> H[Ask Questions!!!]
+     
+
+classDef grey fill:#dddddd,stroke:#ffffff,stroke-width:px,color:#000000, font-size:15px;
+classDef white fill:#ffffff,stroke:#000,stroke-width:px,color:#000,font-weight:bold
+classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
+class A,B,C,D,E,F,G,H,M,Q,N,O,P grey
+class S,T,U spacewhite
+class first,second,third white
+```
+***Figure - Getting started for a new contributor***
+
+The figure above shows the steps to follow as a new contributor. Again, questions are always welcome.
 
 Some tasks require more trust and more access in the Kubernetes organization.
 See [Participating in SIG Docs](/docs/contribute/participate/) for more details about
 roles and permissions.
 
 ## Your first contribution
+
+You can prepare for your first contribution by reviewing several steps beforehand. The figure below outlines the steps. The details follow. 
+
+<!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
+<!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
+
+```mermaid
+flowchart LR
+    subgraph second[First Contribution]
+    direction TB
+    S[ ] -.-
+    G[Review PRs from other<br>K8s members] -->
+    A[Check K8s/website<br>issues list for<br>good first PRs] --> B[Open a PR!!]
+    end
+    subgraph first[Suggested Prep]
+    direction TB
+       T[ ] -.-
+       D[Read contribution overview] -->E[Read K8s content<br>and style guides]
+       E --> F[Learn about Hugo page<br>content types<br>and shortcodes]
+    end
+    
+
+    first ----> second
+     
+
+classDef grey fill:#dddddd,stroke:#ffffff,stroke-width:px,color:#000000, font-size:15px;
+classDef white fill:#ffffff,stroke:#000,stroke-width:px,color:#000,font-weight:bold
+classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
+class A,B,D,E,F,G grey
+class S,T spacewhite
+class first,second white
+```
+***Figure - Preparation for your first contribution***
 
 - Read the [Contribution overview](/docs/contribute/new-content/overview/) to
   learn about the different ways you can contribute.
