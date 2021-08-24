@@ -15,7 +15,7 @@ content.
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart LR 
     subgraph second[Before you begin]
     direction TB
@@ -42,7 +42,7 @@ classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
 class A,B,C,D,E,F,G,H grey
 class S,T spacewhite
 class first,second white
-```
+{{</ mermaid >}}
 
 ***Figure - Contributing new content preparation***
 

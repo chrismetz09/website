@@ -33,7 +33,7 @@ opening a pull request. The figure below outlines the steps and the details foll
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A([fa:fa-user New<br>Contributor]) --- id1[(K8s/Website<br>GitHub)]
 subgraph tasks[Changes using GitHub]
@@ -59,7 +59,7 @@ class A,1,2,3,4,5,6,7 grey
 class 0 spacewhite
 class tasks,tasks2 white
 class id1 k8s
-```
+{{</ mermaid >}}
 
 ***Figure - Steps for opening a PR using GitHub***
 
@@ -127,7 +127,7 @@ The figure below shows the steps to follow when you work from a local fork. The 
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 1[Fork the K8s/website<br>repository] --> 2[Create local clone<br>and set upstream]
 subgraph changes[Your changes]
@@ -150,7 +150,7 @@ classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
 class 1,2,3,3a,4,5,6 grey
 class S,T spacewhite
 class changes,changes2 white
-```
+{{</ mermaid >}}
 ***Figure - Working from a local fork to make your changes***
 
 
@@ -358,7 +358,7 @@ The figure below shows the steps to open a PR from your fork to the K8s/website.
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 subgraph first[ ]
 direction TB
@@ -379,7 +379,7 @@ classDef grey fill:#dddddd,stroke:#ffffff,stroke-width:px,color:#000000, font-si
 classDef white fill:#ffffff,stroke:#000,stroke-width:px,color:#000,font-weight:bold
 class 1,2,3,4,5,6,7,8 grey
 class first,second white
-```
+{{</ mermaid >}}
 ***Figure - Steps to open a PR from your fork to the K8s/website***
 
 1. In a web browser, go to the [`kubernetes/website`](https://github.com/kubernetes/website/) repository.

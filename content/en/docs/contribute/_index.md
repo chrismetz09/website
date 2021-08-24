@@ -53,7 +53,7 @@ To get involved with documentation:
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart TB
     subgraph third[Open PR]
         direction TB
@@ -91,7 +91,7 @@ classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
 class A,B,C,D,E,F,G,H,M,Q,N,O,P grey
 class S,T,U spacewhite
 class first,second,third white
-```
+{{</ mermaid >}}
 ***Figure - Getting started for a new contributor***
 
 The figure above shows the steps to follow as a new contributor. Again, questions are always welcome.
@@ -107,7 +107,7 @@ You can prepare for your first contribution by reviewing several steps beforehan
 <!-- See https://github.com/kubernetes/website/issues/28808 for live-editor URL to this figure -->
 <!-- You can also cut/paste the mermaid code into the live editor at https://mermaid-js.github.io/mermaid-live-editor to play around with it -->
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
     subgraph second[First Contribution]
     direction TB
@@ -132,7 +132,7 @@ classDef spacewhite fill:#ffffff,stroke:#fff,stroke-width:0px,color:#000
 class A,B,D,E,F,G grey
 class S,T spacewhite
 class first,second white
-```
+{{</ mermaid >}}
 ***Figure - Preparation for your first contribution***
 
 - Read the [Contribution overview](/docs/contribute/new-content/overview/) to
