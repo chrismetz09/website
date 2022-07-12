@@ -299,7 +299,7 @@ Once a localization meets requirements for workflow and minimum output, SIG Docs
 - Enable language selection on the website
 - Publicize the localization's availability through
   [Cloud Native Computing Foundation](https://www.cncf.io/about/)(CNCF) channels, including the
-  [Kubernetes blog](https://kubernetes.io/blog/).
+  [Kubernetes blog](/blog/).
 
 ## Translating content
 
@@ -391,7 +391,7 @@ For example, see the [Korean Localization Guide](/ko/docs/contribute/localizatio
 ### Language specific Zoom meetings
 
 If the localization project needs a separate meeting time, contact a SIG Docs Co-Chair or Tech
-Lead to create a new reoccurring Zoom meeting and calendar invite. This is only needed when the
+Lead to create a new reoccurring Zoom meeting and calendar invite. This is only needed when 
 the team is large enough to sustain and require a separate meeting.
 
 Per CNCF policy, the localization teams must upload their meetings to the SIG Docs YouTube

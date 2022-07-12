@@ -86,12 +86,13 @@
 {{ end }}
 <meta property="og:type" content="{{ $ogType }}">
 
+<script src="/js/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
 {{ if .HasShortcode "mermaid" }}
 <!-- Copied from https://unpkg.com/mermaid@8.11.2/dist/mermaid.min.js -->
 <script src="{{ "js/mermaid.min.js" | relURL }}"></script>
 {{ end }}
 
-<script src="/js/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
+
 
 {{- if eq (lower .Params.cid) "community" -}}
 {{- if eq .Params.community_styles_migrated true -}}
