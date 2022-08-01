@@ -71,7 +71,7 @@ Pod Template:
            job-name=pi
   Containers:
    pi:
-    Image:      perl
+    Image:      perl:5.34.0
     Port:       <none>
     Host Port:  <none>
     Command:
@@ -125,7 +125,7 @@ spec:
         - -Mbignum=bpi
         - -wle
         - print bpi(2000)
-        image: perl
+        image: perl:5.34.0
         imagePullPolicy: Always
         name: pi
         resources: {}
@@ -264,7 +264,7 @@ Jobs with _fixed completion count_ - that is, jobs that have non null
     When you use an Indexed Job in combination with a
     {{< glossary_tooltip term_id="Service" >}}, Pods within the Job can use
     the deterministic hostnames to address each other via DNS.
-  - From the containarized task, in the environment variable `JOB_COMPLETION_INDEX`.
+  - From the containerized task, in the environment variable `JOB_COMPLETION_INDEX`.
   
   The Job is considered complete when there is one successfully completed Pod
   for each index. For more information about how to use this mode, see
@@ -356,7 +356,7 @@ spec:
     spec:
       containers:
       - name: pi
-        image: perl
+        image: perl:5.34.0
         command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
       restartPolicy: Never
 ```
@@ -402,7 +402,7 @@ spec:
     spec:
       containers:
       - name: pi
-        image: perl
+        image: perl:5.34.0
         command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
       restartPolicy: Never
 ```
