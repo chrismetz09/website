@@ -39,8 +39,6 @@
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 {{ partialCached "head-css.html" . "asdf" }}
-<!--<script-->
-<!--  src="{{ "js/jquery-3.6.0.min.js" | relURL }}" crossorigin="anonymous"></script>-->
 {{ if and (.Site.Params.offlineSearch) (not .Site.Params.gcs_engine_id) }}
 <script src="https://unpkg.com/lunr@2.1.6/lunr.js"></script>
 <script src="/js/offline-search.js"></script>
@@ -88,8 +86,8 @@
 
 <script src="/js/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
 {{ if .HasShortcode "mermaid" }}
-<!-- Copied from https://unpkg.com/mermaid@8.11.2/dist/mermaid.min.js -->
-<script src="{{ "js/mermaid.min.js" | relURL }}"></script>
+<!-- Copied from https://unpkg.com/mermaid@8.13.4/dist/mermaid.min.js -->
+<script async src="{{ "js/mermaid.min.js" | relURL }}"></script>
 {{ end }}
 
 

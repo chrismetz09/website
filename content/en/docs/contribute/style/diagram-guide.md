@@ -374,15 +374,10 @@ Don't forget to check that your diagram renders correctly using the
 This section shows several examples of Mermaid diagrams. 
 
 {{< note >}}
-<<<<<<< HEAD
-The code block examples omit the Hugo Mermaid shortcode tags. This allows you to copy the code block into the live editor
-to experiment on your own. Note that the live editor doesn't recognize Hugo shortcodes. 
-=======
 The code block examples omit the Hugo Mermaid
 shortcode tags. This allows you to copy the code block into the live editor
 to experiment on your own.
 Note that the live editor doesn't recognize Hugo shortcodes. 
->>>>>>> 580c643e50ac2aaac0b1b8f8781716a9429c003b
 {{< /note >}}
 
 ### Example 1 - Pod topology spread constraints
